@@ -1,0 +1,244 @@
+
+
+/* ===================  Nana Antwi ==================================== */
+
+* {
+    font-size: 12pt;  /* sets the font size for all elements. */
+    /* look up reset style sheet */
+    color: black;
+}
+
+body {
+    background-color: white;
+    background-image: url(redbg.gif);
+    margin-left: 6em;
+}
+
+h1 {
+    color: #669999;
+    font-family: "Impact";
+    font-weight: bold;
+    font-size: 3em;
+}
+
+h2 {
+    color: #669999;
+    font-family: "lucidagrande";
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+h3 {
+    color: #669999;
+    font-family: 'lucidagrande';
+    font-weight: bold;
+    font-size: 1em;
+}
+
+h4 {
+    color: #669999;
+    font-family: "lucidagrande";
+    font-weight: bold;
+    font-size: .8em;	
+}
+
+h5 { 
+    color: #669999;
+
+
+    font-family: "sansserif";
+    font-weight: bold;
+    font-size: .6em;	
+}
+
+h6 {
+    color: #669999;
+    font-family: "sansserif";
+    font-weight: bold;
+    font-size: .5em;	
+}
+
+ol ol ol li {
+    list-style: lower-alpha
+}
+
+ol ol li {
+    font-weight: normal;
+    list-style: decimal;
+   /* padding-top: 0em*/
+}
+
+ol li {
+    font-weight: bold;
+    list-style: upper-roman;
+   /* padding-top: 1em*/
+}
+
+ul ul ul li { 
+    list-style: circle;
+}
+
+ul ul li { 
+    list-style: square;
+}
+
+ul li { 
+    list-style: disc;
+}
+
+p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+}
+
+/* ===================  Header Section  ==================================== */
+/* now i would have a section that corresponds to my html sections.          */
+header {
+    background-color: white;
+}
+
+
+
+
+/* ===================  Home Page        ==================================== */
+/* -------------------------------------------------------------------------- */
+#index {  
+    background-color: white;
+}
+
+
+
+#form {  
+    background-color: white;
+}
+
+
+#home p {
+    /* this rule will give all the paragraphs on the home page a first line  */
+    /* indent of 3 em. it only effects paragraphs that are contained inside  */
+    /* the element with the id of home, this replaces using an embeded or    */
+    /* level style */
+    text-indent: 3em;
+    font-family: "monospace";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===================  General Class Section  ============================= */
+/* I can add any generic classes here. Technically i can place these rules   */
+/* anywhere in the style sheet. This just helps to organize everything.     */
+.firstLine {
+    text-indent: 3em;
+}
+
+/*****************     form section                ****************************/
+#form article#main{
+    float: none;
+    margin: auto; /* because of the fixed width this centers the form */
+    text-align: left;
+    width: 600px; /* not repsonive but fixed */
+}
+
+/* need to clear any floats that may exist */
+fieldset{
+    border: 0px solid #00498e;
+      
+}
+/* just pushes content to left side of the box. */
+fieldset.contact{
+    float: left;
+}
+/* when you look at the labels this pushes then next to the input and right
+aligns them. Display block means they are each on their own line. */
+fieldset.contact label{
+    display: block;
+    text-align: right /* pushes the text to the right where they line up */
+        /* the float left above pushes everything back to the left*/
+}
+
+fieldset.contact input{
+    width: 15em; /* works with above to be the same size for the boxes */
+}
+
+fieldset.buttons{
+    border: none;
+}
+
+fieldset.wrapper {
+    border: 0;
+    margin: auto;
+}
+
+fieldset.wrapper legend {
+    color: #00498e;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+fieldset.wrapper > legend {
+    /* i only want the first legend ie if it follows the class wrapper */
+    font-size: 2em;
+}
+
+label {
+    color: #005cb3;
+    display: block;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+/* style the errors in the form so they are visible */
+.mistake {
+    color: #002EB8;
+    background-color: #800;
+    border: thin solid #000;
+}
+
+/* style the list of errors that will show before the form */
+#errors ol li{
+    color: #ff5555;
+}
+
+
+
+/*****************    nav              ****************************/
+
+nav ol li {
+    display: inline-block;
+    margin: 5px;
+        
+}
+
+a {
+    color:#99CCFF;    
+}
+
+li.activePage {
+    color: #6699FF;
+      font-weight: bold; 
+        
+}
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img { 
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+legend {
+    text-align: center;
+}
+
+fieldset{
+    display: block;
+    }
